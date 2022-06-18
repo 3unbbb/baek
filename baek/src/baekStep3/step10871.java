@@ -7,28 +7,31 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class step15552 {
+public class step10871 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st;
-		
-		
-		int n = Integer.parseInt(br.readLine());
-		
-		for(int i =0; i<n; i++){
-			
 			st = new StringTokenizer(br.readLine()," ");
+		
+		
+		int n = Integer.parseInt(st.nextToken());
+		int x = Integer.parseInt(st.nextToken());
+		
+			st = new StringTokenizer(br.readLine()," ");
+		for(int i=0; i<n; i++){
+			int a = Integer.parseInt(st.nextToken());
 			
-			bw.write((Integer.parseInt(st.nextToken())+Integer.parseInt(st.nextToken()))+"\n");
 		}
 		
-		br.close();
-		bw.flush();;
-		bw.close();
+			
+
+		
+		
+		
+
 	}
 
 }
