@@ -1,4 +1,4 @@
-package baekStep4;
+package OneArray;
 
 import java.io.BufferedReader;
 import java.io.IOException;
