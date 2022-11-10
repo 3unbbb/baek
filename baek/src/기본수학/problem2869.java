@@ -15,23 +15,22 @@ public class problem2869 {
 		
 		st = new StringTokenizer(br.readLine());
 		
-		double a = Integer.parseInt(st.nextToken());
-		double b = Integer.parseInt(st.nextToken());
-		double v = Integer.parseInt(st.nextToken());
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		int v = Integer.parseInt(st.nextToken());
 		
-		double n = 0.0;
-		int n1 = 0;
+		//낮에 정상까지 오르면 떨어지는 값은 필요없으니까 v-b
+		int day = (v-b)/(a-b);
+
 		
-		if(a>b){
-		n = v/(a-b);
-			if(n%1 == 0){
-				n = n-1;
-				System.out.println((int)n);
-			}else{
-				n1 = (int) Math.ceil(n);
-				System.out.println(n1);
-			}
+		if((v-b)%(a-b)!= 0){
+			day++;
+			
 		}
+		
+		System.out.println(day);
+			
+
 		
 	}
 
